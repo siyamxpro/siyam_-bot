@@ -1,0 +1,175 @@
+{
+  "telegram": {
+    "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
+    "polling": true,
+    "webhook": {
+      "enable": false,
+      "url": "",
+      "port": 3002,
+      "path": "/telegram-webhook",
+      "secretToken": ""
+    },
+    "options": {
+      "polling": {
+        "autoStart": true,
+        "interval": 300,
+        "params": {
+          "timeout": 10
+        }
+      },
+      "filepath": false
+    }
+  },
+
+  "language": "en",
+  "notesLanguage": "change language using ISO 639-1 code",
+
+  "nickNameBot": "[ , ]𝐍𝐈𝐉𝐇𝐔𝐌-𝐂𝐇𝐀𝐓-𝐁𝐎𝐓",
+
+  "prefix": ",",
+
+  "adminOnly": {
+    "enable": false,
+    "ignoreCommand": []
+  },
+
+  "adminBot": [
+    "YOUR_ADMIN_TELEGRAM_USER_ID"
+  ],
+
+  "security": {
+    "enableOwnerLock": true,
+    "ownerUID": "YOUR_OWNER_TELEGRAM_USER_ID",
+    "ownerIndex": 0,
+    "notes": "Do not change adminBot[0], bot will stop if modified"
+  },
+
+  "reactUnsend": {
+    "enable": true,
+    "onlyAdmin": true,
+    "emojis": ["😹", "😾", "💋", "🫡"],
+    "notes": "Telegram reaction support depends on bot permissions and Telegram API capabilities."
+  },
+
+  "whiteListMode": {
+    "enable": true,
+    "whiteListIds": [
+      "YOUR_ADMIN_TELEGRAM_USER_ID"
+    ],
+    "notes": "If enabled, only IDs in whiteListIds can use the bot."
+  },
+
+  "whiteListModeThread": {
+    "enable": false,
+    "whiteListThreadIds": [],
+    "notes": "Telegram group and supergroup chat IDs can be used here."
+  },
+
+  "database": {
+    "type": "sqlite",
+    "uriMongodb": "",
+    "autoSyncWhenStart": false,
+    "autoRefreshThreadInfoFirstTime": true,
+    "notes": "Recommended using 'mongodb' or 'sqlite'."
+  },
+
+  "timeZone": "Asia/Dhaka",
+
+  "credentials": {
+    "gmailAccount": {
+      "email": "",
+      "clientId": "",
+      "clientSecret": "",
+      "refreshToken": "",
+      "apiKey": ""
+    },
+    "gRecaptcha": {
+      "siteKey": "",
+      "secretKey": ""
+    }
+  },
+
+  "dashBoard": {
+    "enable": true,
+    "expireVerifyCode": 300000,
+    "port": 3001
+  },
+
+  "serverUptime": {
+    "enable": false,
+    "port": 3001,
+    "socket": {
+      "enable": true,
+      "channelName": "uptime",
+      "verifyToken": ""
+    }
+  },
+
+  "autoRestart": {
+    "time": null,
+    "notes": "Example: 60000 (1min), 3600000 (1hr), 0 0 * * * (daily)."
+  },
+
+  "autoUptime": {
+    "enable": false,
+    "timeInterval": 180,
+    "url": "",
+    "notes": "Time in seconds. Recommended for uptime monitors."
+  },
+
+  "autoLoadScripts": {
+    "enable": false,
+    "ignoreCmds": "",
+    "ignoreEvents": "",
+    "notes": "Automatically reloads scripts if edited."
+  },
+
+  "autoRestartWhenTelegramError": false,
+
+  "restartTelegram": {
+    "enable": true,
+    "timeRestart": 3600000,
+    "delayAfterStopListening": 2000,
+    "logNoti": true,
+    "notes": "Restart Telegram polling listener periodically."
+  },
+
+  "notiWhenTelegramError": {
+    "notes": "Notification settings when Telegram polling stops.",
+    "gmail": {
+      "enable": false,
+      "emailGetNoti": ""
+    },
+    "telegram": {
+      "enable": false,
+      "botToken": "",
+      "chatId": ""
+    },
+    "discordHook": {
+      "enable": false,
+      "webhookUrl": ""
+    }
+  },
+
+  "hideNotiMessage": {
+    "commandNotFound": false,
+    "adminOnly": false,
+    "threadBanned": false,
+    "userBanned": false,
+    "needRoleToUseCmd": false,
+    "needRoleToUseCmdOnReply": false,
+    "needRoleToUseCmdOnReaction": false
+  },
+
+  "logEvents": {
+    "disableAll": false,
+    "message": true,
+    "edited_message": true,
+    "callback_query": true,
+    "message_reaction": true,
+    "channel_post": true,
+    "chat_member": true,
+    "my_chat_member": true,
+    "poll": true
+  }
+}
